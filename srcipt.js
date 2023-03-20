@@ -1,9 +1,13 @@
-$(function() {
+// window.addEventListener('scroll', function(){
+//   if(window.pageYOffset > 150){
+//      this.document.body.style.background = "black";
+//   }
+  
+// })
+var text = document.querySelector('.title');
 
-    $(window).scroll(function() {
-  
-      var mass = Math.min(20, 1+0.005*$(this).scrollTop());
-  
-      $('#title').css('transform', 'scale(' + mass + ')');
-    });
-  });
+window.addEventListener('scroll', ()=>{
+  // var text = document.getElementsByClassName("title");
+  const current = window.scrollY;
+    text.style.fontSize = `clamp(1rem, ${current}px, 22rem)`;
+});

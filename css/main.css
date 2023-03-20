@@ -1,3 +1,23 @@
+:root {
+  --primary-color: #0e0f10;
+  --text-color: #ffffff;
+}
+
 body {
-  background-color: black;
+  background-color: var(--primary-color);
+  height: 2000px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title p {
+  color: var(--text-color);
+  font-size: 1em;
 }/*# sourceMappingURL=main.css.map */
