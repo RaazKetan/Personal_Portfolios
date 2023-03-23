@@ -9,13 +9,19 @@ body{
 }
 .title{
     font-family: 'Poppins', sans-serif;
+    align-items:center ;
     position: fixed;
+     width: 300vw;
+    //  height: 400px;
+     overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    margin: auto;
 }
 .title p{
     color: var(--text-color);
      font-size: 1em;
+     display: inline block;
 }

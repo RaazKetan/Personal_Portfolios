@@ -4,10 +4,15 @@
 //   }
   
 // })
-var text = document.querySelector('.title');
-
+var text = document.querySelector('.title'); 
 window.addEventListener('scroll', ()=>{
-  // var text = document.getElementsByClassName("title");
+  //fontSize on scroll
   const current = window.scrollY;
-    text.style.fontSize = `clamp(1rem, ${current}px, 22rem)`;
+    text.style.fontSize = `clamp(1rem, ${current}px, 30rem)`;
+     
+    //Opacity change
+    var limit = 500;
+    if(current<=limit){
+      text.style.opacity = 1- current/limit;
+    }
 });
