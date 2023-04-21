@@ -1,6 +1,7 @@
 :root{
-    --primary-color: #0e0f10;
+    --primary-color: #131212;
     --text-color: #ffffff;
+    --font-body:' 'Poppins', sans-serif'
 }
 
 body{
@@ -22,7 +23,7 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     margin: auto;
-    width:200vw;
+    width:300vw;
 
     // background-color: red;
 }
@@ -33,6 +34,21 @@ body{
      overflow: hidden;
 }
 
-.container{
-    color: white;
+.catch_phrase{
+    color: var(--text-color);
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    // font-weight: bold;
+    // letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.moon
+{
+    // font-family: 'Segoe UI Symbol';
+    font-size: 4rem;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+.moon.hidden{
+    opacity: 0;
 }
