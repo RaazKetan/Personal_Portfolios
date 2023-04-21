@@ -1,18 +1,19 @@
-// window.addEventListener('scroll', function(){
-//   if(window.pageYOffset > 150){
-//      this.document.body.style.background = "black";
-//   }
-  
-// })
-var text = document.querySelector('.title'); 
-window.addEventListener('scroll', ()=>{
-  //fontSize on scroll
+const text = document.querySelector('#name');
+const container = document.querySelector('.container');
+
+window.addEventListener('scroll', () => {
   const current = window.scrollY;
-    text.style.fontSize = `clamp(1rem, ${current}px, 30rem)`;
-     
-    //Opacity change
-    var limit = 500;
-    if(current<=limit){
-      text.style.opacity = 1- current/limit;
-    }
+  const limit = 400;
+
+  if (current > limit) {
+    return;
+  }
+
+  text.style.fontSize = `clamp(3rem, ${current}px, 30rem)`;
+  text.style.opacity = 1 - current / limit;
+
+  if (text.style.opacity <= 0.01) {
+    window.removeEventListener('scroll', handleScroll);
+    container.style.opacity = 1;
+  }
 });

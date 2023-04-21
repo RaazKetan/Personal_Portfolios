@@ -5,24 +5,33 @@
 
 body {
   background-color: var(--primary-color);
-  height: 2000px;
+  height: 200vh;
+}
+
+.main {
+  height: 150vh;
 }
 
 .title {
   font-family: "Poppins", sans-serif;
   align-items: center;
   position: fixed;
-  width: 300vw;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   margin: auto;
+  width: 200vw;
 }
 
-.title p {
+#name {
   color: var(--text-color);
-  font-size: 1em;
+  font-size: 3em;
   display: inline block;
+  overflow: hidden;
+}
+
+.container {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
