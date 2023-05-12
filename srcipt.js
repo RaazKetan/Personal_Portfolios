@@ -18,21 +18,18 @@ window.addEventListener('scroll', () => {
   }
 });
 
-const moon = document.querySelector('.moon');
+const iconContainer = document.querySelector('.icon-container');
+  const createText = document.querySelector('.create');
 
-function changeMoon() {
-  if (moon.textContent === 'C') {
-    moon.textContent = '🌙'; // Replace "C" with crescent moon
-    moon.classList.add('hidden'); // Hide "C"
-  } else {
-    moon.textContent = 'C'; // Replace crescent moon with "C"
-    moon.classList.remove('hidden'); // Show "C"
-  }
-}
+  setInterval(() => {
+    iconContainer.style.display = 'block';
+    createText.style.opacity = 0;
+    setTimeout(() => {
+      createText.style.display = 'none';
+      iconContainer.style.opacity = 1;
+    }, 1000);
+  }, 1000);
 
-setInterval(() => {
-  changeMoon();
-}, 1000);
 
 
 

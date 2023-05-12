@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #131212;
-  --text-color: #ffffff;
+  --primary-color: #080A0C;
+  --text-color: #FA6821;
   --font-body:" "Poppins", sans-serif" ;
 }
 
@@ -34,18 +34,14 @@ body {
 }
 
 .catch_phrase {
-  color: var(--text-color);
-  font-size: 4rem;
-  font-family: "Roboto", sans-serif;
+  color: #2568CE;
+  font-size: 5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
-.moon {
-  font-size: 4rem;
-  opacity: 1;
-  transition: opacity 1s ease-in;
-}
-
-.moon.hidden {
-  opacity: 0;
+.icon-container {
+  display: none;
+  font-size: 5rem;
 }/*# sourceMappingURL=main.css.map */
