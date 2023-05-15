@@ -18,17 +18,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-const iconContainer = document.querySelector('.icon-container');
-  const createText = document.querySelector('.create');
-
-  setInterval(() => {
-    iconContainer.style.display = 'block';
-    createText.style.opacity = 0;
-    setTimeout(() => {
-      createText.style.display = 'none';
-      iconContainer.style.opacity = 1;
-    }, 1000);
-  }, 1000);
 
 
 
