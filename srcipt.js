@@ -1,5 +1,4 @@
 const text = document.querySelector('#name');
-// const container = document.querySelector('.container');
 
 window.addEventListener('scroll', () => {
   const current = window.scrollY;
@@ -14,9 +13,9 @@ window.addEventListener('scroll', () => {
 
   if (text.style.opacity <= 0.2) {
     window.removeEventListener('scroll', handleScroll);
-    // container.style.opacity = 0;
   }
 });
+
 
 
 

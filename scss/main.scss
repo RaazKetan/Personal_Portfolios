@@ -31,15 +31,28 @@ body{
 }
 
 .catch_phrase{
+    height: 100vh;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #2568CE;
     font-size: 2rem;
     font-family: 'Poppins', sans-serif; 
-    font-weight: 300;
-    letter-spacing: 1em;
+    flex-wrap: wrap;
+    letter-spacing: 2em;
+    overflow: hidden;
     text-transform: uppercase;
+}
+#page3
+{
+    height: 100vh;
+    // background-color: #FA6821;
+    color: #80808B;
+}
+#page3>#line
+{
+    
 }
 
   
