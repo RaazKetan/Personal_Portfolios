@@ -19,7 +19,6 @@ body{
 
 #name{
     font-family: 'Poppins', sans-serif; 
-   
     position: fixed;
     top: 50%;
     left: 50%;
@@ -30,8 +29,23 @@ body{
      font-size: 3em;
 }
 
-.catch_phrase{
+#page2
+{
     height: 100vh;
+    display: flex;
+    justify-content: center;    
+    align-items: center;    
+    // background-color: #2568CE;
+}
+#page2>h2
+{
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+
+.catch_phrase{
+    // height: 50vh;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -49,10 +63,20 @@ body{
     height: 100vh;
     // background-color: #FA6821;
     color: #80808B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#page3>span
+{
+    font-family: 'Poppins', sans-serif; 
+    
 }
 #page3>#line
 {
-    
+    border-left: 1px solid #80808B;
+    height: 6em;
 }
 
   

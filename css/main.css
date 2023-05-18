@@ -24,8 +24,19 @@ body {
   font-size: 3em;
 }
 
-.catch_phrase {
+#page2 {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page2 > h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.catch_phrase {
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -42,4 +53,17 @@ body {
 #page3 {
   height: 100vh;
   color: #80808B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page3 > span {
+  font-family: "Poppins", sans-serif;
+}
+
+#page3 > #line {
+  border-left: 1px solid #80808B;
+  height: 6em;
 }/*# sourceMappingURL=main.css.map */
