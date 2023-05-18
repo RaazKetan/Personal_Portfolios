@@ -6,14 +6,14 @@
 
 body {
   background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
 }
 
-.main {
-  height: 150vh;
+#page1 {
+  height: 100vh;
 }
 
 #name {
-  font-family: "Poppins", sans-serif;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -29,23 +29,43 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-#page2 > h2 {
+#about > hr {
+  margin-left: 0px;
+  width: 7em;
+}
+
+#about > p {
+  padding-top: 1em;
+  color: #80808B;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+#about > p > span {
+  color: var(--text-color);
+}
+
+#about > h2 {
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+}
+
+#about > h2 > span {
+  color: var(--text-color);
 }
 
 .catch_phrase {
+  padding: 5em 0 3em 0;
   font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #2568CE;
   font-size: 2rem;
-  font-family: "Poppins", sans-serif;
-  flex-wrap: wrap;
-  letter-spacing: 2em;
+  letter-spacing: 1em;
   overflow: hidden;
   text-transform: uppercase;
 }
@@ -54,16 +74,19 @@ body {
   height: 100vh;
   color: #80808B;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-#page3 > span {
-  font-family: "Poppins", sans-serif;
 }
 
 #page3 > #line {
   border-left: 1px solid #80808B;
   height: 6em;
+}
+
+#page3 > #know {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2em;
 }/*# sourceMappingURL=main.css.map */

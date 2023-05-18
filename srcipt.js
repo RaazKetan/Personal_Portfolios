@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
   text.style.fontSize = `clamp(3rem, ${current}px, 30rem)`;
   text.style.opacity = 1 - current / limit;
 
-  if (text.style.opacity <= 0.2) {
+  if (text.style.opacity == 0) {
     window.removeEventListener('scroll', handleScroll);
   }
 });
