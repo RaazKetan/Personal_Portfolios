@@ -59,7 +59,7 @@ body{
 }
 
 .catch_phrase{
-    padding: 5em 0 3em 0;
+    padding: 3em 0 3em 0;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -91,9 +91,45 @@ body{
     align-items: center;
     flex-direction: column;
     padding-top: 2em;
+    
 }
 
-
-  
-
-  
+#page3>#icons
+{
+    padding: 5em 0 5em 0;
+   
+}
+#page3>#icons>i
+{
+    font-size: 4em;
+    padding: 0 1em 0 1em;
+    transition:.5s ease all;
+}
+#page3>#icons>i:hover
+{
+    transform: scale(1.5);
+}
+#page3>#icons>i:nth-child(1)
+{
+    color: #e34f26;
+}
+#page3>#icons>i:nth-child(2)
+{
+    color:  #2196f3;
+}
+#page3>#icons>i:nth-child(3)
+{
+    color: #d5eb09;
+}
+#page3>#icons>i:nth-child(4)
+{
+    color: rgb(255, 170, 0);
+}
+#page3>#icons>i:nth-child(5)
+{
+    color: rgb(161, 255, 47);
+}
+#page3>#icons>i:nth-child(6)
+{
+    color: white;
+}
