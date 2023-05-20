@@ -1,135 +1,122 @@
-:root{
-    --primary-color: #080A0C;
-    --text-color: #FA6821;
-    --font-body:' 'Poppins', sans-serif'
+:root {
+  --primary-color: #080a0c;
+  --text-color: #fa6821;
+  --font-body: " " Poppins ", sans-serif";
 }
 
-body{
-    background-color: var(--primary-color);
-    font-family: 'Poppins', sans-serif; 
+body {
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
 }
-#page1
-{
+#page1 {
+  height: 100vh;
+}
+
+#name {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300vw;
+  color: var(--text-color);
+  font-size: 3em;
+}
+
+#page2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#about > hr {
+  margin-left: 0px;
+  width: 7em;
+}
+#about > p {
+  padding-top: 1em;
+  color: #80808b;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#about > p > span {
+  color: var(--text-color);
+}
+#about > h2 {
+  color: white;
+  font-size: 2em;
+}
+#about > h2 > span {
+  color: var(--text-color);
+}
+
+.catch_phrase {
+  padding: 3em 0 3em 0;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2568ce;
+  font-size: 2rem;
+  letter-spacing: 1em;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+#page3 {
+  height: 100vh;
+  color: #80808b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page3 > #line {
+  border-left: 1px solid #80808b;
+  height: 6em;
+}
+#page3 > #know {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+#page3 > #icons {
+  padding: 5em 0 5em 0;
+}
+#page3 > #icons > i {
+  font-size: 4em;
+  padding: 0 1em 0 1em;
+  transition: 0.5s ease all;
+}
+#page3 > #icons > i:hover {
+  transform: scale(1.5);
+}
+#page3 > #icons > i:nth-child(1) {
+  color: #e34f26;
+}
+#page3 > #icons > i:nth-child(2) {
+  color: #2196f3;
+}
+#page3 > #icons > i:nth-child(3) {
+  color: #d5eb09;
+}
+#page3 > #icons > i:nth-child(4) {
+  color: rgb(255, 170, 0);
+}
+#page3 > #icons > i:nth-child(5) {
+  color: rgb(161, 255, 47);
+}
+#page3 > #icons > i:nth-child(6) {
+  color: white;
+}
+
+#page4>#project1{
     height: 100vh;
-}
-
-#name{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width:300vw;
-    color: var(--text-color);
-     font-size: 3em;
-}
-
-#page2
-{
-    height: 100vh;
-    display: flex;
-    justify-content: center;    
-    align-items: center;    
-    flex-direction: column;
-}
-#about>hr
-{
-    margin-left: 0px;
-    width: 7em;
-}
-#about>p
-{
-    padding-top: 1em;
-    color: #80808B;
-    font-size: 1em;
-    line-height: 1.5em;
-}
-#about>p>span
-{
-    color: var(--text-color);
-}
-#about>h2
-{
-    color:white;
-    font-size: 2em;
-}
-#about>h2>span
-{
-    color: var(--text-color);
-}
-
-.catch_phrase{
-    padding: 3em 0 3em 0;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #2568CE;
-    font-size: 2rem;
-    letter-spacing: 1em;
-    overflow: hidden;
-    text-transform: uppercase;
-}
-#page3
-{
-    height: 100vh;
-    color: #80808B;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#page3>#line
-{
-    border-left: 1px solid #80808B;
-    height: 6em;
-}
-#page3>#know
-{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 2em;
-    
-}
-
-#page3>#icons
-{
-    padding: 5em 0 5em 0;
-   
-}
-#page3>#icons>i
-{
-    font-size: 4em;
-    padding: 0 1em 0 1em;
-    transition:.5s ease all;
-}
-#page3>#icons>i:hover
-{
-    transform: scale(1.5);
-}
-#page3>#icons>i:nth-child(1)
-{
-    color: #e34f26;
-}
-#page3>#icons>i:nth-child(2)
-{
-    color:  #2196f3;
-}
-#page3>#icons>i:nth-child(3)
-{
-    color: #d5eb09;
-}
-#page3>#icons>i:nth-child(4)
-{
-    color: rgb(255, 170, 0);
-}
-#page3>#icons>i:nth-child(5)
-{
-    color: rgb(161, 255, 47);
-}
-#page3>#icons>i:nth-child(6)
-{
-    color: white;
+  background-image: url('https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-color: red;
 }

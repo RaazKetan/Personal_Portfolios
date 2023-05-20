@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #080A0C;
-  --text-color: #FA6821;
-  --font-body:" "Poppins", sans-serif" ;
+  --primary-color: #080a0c;
+  --text-color: #fa6821;
+  --font-body: " " Poppins ", sans-serif";
 }
 
 body {
@@ -39,7 +39,7 @@ body {
 
 #about > p {
   padding-top: 1em;
-  color: #80808B;
+  color: #80808b;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -63,7 +63,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #2568CE;
+  color: #2568ce;
   font-size: 2rem;
   letter-spacing: 1em;
   overflow: hidden;
@@ -72,14 +72,14 @@ body {
 
 #page3 {
   height: 100vh;
-  color: #80808B;
+  color: #80808b;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 #page3 > #line {
-  border-left: 1px solid #80808B;
+  border-left: 1px solid #80808b;
   height: 6em;
 }
 
@@ -127,4 +127,12 @@ body {
 
 #page3 > #icons > i:nth-child(6) {
   color: white;
+}
+
+#page4 > #project1 {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
