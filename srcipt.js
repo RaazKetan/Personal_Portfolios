@@ -13,6 +13,7 @@ window.addEventListener('scroll', () => {
 
   if (text.style.opacity == 0) {
     window.removeEventListener('scroll', handleScroll);
+    text.style.position = "absolute";
   }
 });
 

@@ -22,6 +22,7 @@ body {
   width: 300vw;
   color: var(--text-color);
   font-size: 3em;
+  z-index: 1;
 }
 
 #page2 {
@@ -42,15 +43,18 @@ body {
   color: #80808b;
   font-size: 1em;
   line-height: 1.5em;
+  z-index: 2;
 }
 
 #about > p > span {
   color: var(--text-color);
+  z-index: 2;
 }
 
 #about > h2 {
   color: white;
   font-size: 2em;
+  z-index: 2;
 }
 
 #about > h2 > span {
@@ -68,6 +72,7 @@ body {
   letter-spacing: 1em;
   overflow: hidden;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 #page3 {
@@ -89,10 +94,12 @@ body {
   align-items: center;
   flex-direction: column;
   padding-top: 2em;
+  z-index: 2;
 }
 
 #page3 > #icons {
   padding: 5em 0 5em 0;
+  z-index: 2;
 }
 
 #page3 > #icons > i {
@@ -131,8 +138,5 @@ body {
 
 #page4 > #project1 {
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
-  background-size: cover;
-  background-position: center;
-  background-color: red;
+  background: linear-gradient(rgba(53, 52, 52, 0.185), rgba(52, 52, 57, 0.178)), #282a2c;
 }/*# sourceMappingURL=main.css.map */
