@@ -1,10 +1,12 @@
 const text = document.querySelector('#name');
 
 window.addEventListener('scroll', () => {
-  const current = window.scrollY;
+  const current = Math.trunc(window.scrollY);
   const limit = 500;
+  console.log(current);
 
   if (current > limit) {
+    text.style.opacity = 0;
     return;
   }
 
