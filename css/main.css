@@ -4,7 +4,7 @@
   --font-body: " " Poppins ", sans-serif";
 }
 
-body {
+html, body {
   background-color: var(--primary-color);
   font-family: "Poppins", sans-serif;
 }
@@ -14,6 +14,7 @@ body {
 }
 
 #name {
+  z-index: 1;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -22,7 +23,6 @@ body {
   width: 300vw;
   color: var(--text-color);
   font-size: 3em;
-  z-index: 1;
 }
 
 #page2 {
@@ -136,18 +136,64 @@ body {
   color: white;
 }
 
-#page4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #page4 > #project1 {
+  z-index: 2;
   height: 100vh;
-  background: #282a2c;
+  width: 100%;
+  background: #35393C;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  overflow: hidden;
 }
 
-#page4 > #project1 > h1 {
-  color: rgb(233, 7, 7);
+#page4 > #project1 > div {
+  z-index: 2;
+  padding-left: 5em;
+}
+
+#page4 > #project1 > div > h3 {
+  z-index: 2;
+  color: #80808b;
+  font-size: 1em;
+}
+
+#page4 > #project1 > div > h1 {
+  color: white;
+  z-index: 2;
+  line-height: 1.3em;
+}
+
+#page4 > #project1 > div > h4 {
+  z-index: 2;
+  color: white;
+  font-size: 0.7em;
+  font-weight: 300;
+  width: 50%;
+}
+
+#page4 > #project1 > div > #btn {
+  margin-top: 2em;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 1em 2em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+#btn {
+  border-color: white;
+  color: white;
+  background-image: linear-gradient(45deg, white 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+#btn:hover {
+  color: black;
+  background-position: 0;
 }/*# sourceMappingURL=main.css.map */
