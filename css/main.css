@@ -172,17 +172,17 @@ html, body {
   width: 50%;
 }
 
-#page4 > #project1 > div > #btn {
+#page4 > #project1 > div > a > #btn {
   margin-top: 2em;
   border: 2px solid white;
   background-color: transparent;
   cursor: pointer;
-  font-size: 0.8rem;
-  padding: 1em 2em;
+  font-size: 1rem;
+  padding: 1em 1.5em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #btn {
@@ -196,4 +196,73 @@ html, body {
 #btn:hover {
   color: black;
   background-position: 0;
+}
+
+#page4 > #project1 > img {
+  height: 50%;
+  margin-right: 2em;
+}
+
+#page4 > #project2 {
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  background: #35393C;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  #name {
+    font-size: 2em;
+  }
+  #about > h2 {
+    font-size: 1.5em;
+  }
+  .catch_phrase {
+    font-size: 1.5rem;
+  }
+  #page3 > #icons > i {
+    font-size: 3em;
+  }
+  #page4 > #project1 > div {
+    padding-left: 2em;
+  }
+  #page4 > #project1 > div > h3 {
+    font-size: 0.8em;
+  }
+  #page4 > #project1 > div > h1 {
+    font-size: 1.5em;
+  }
+  #page4 > #project1 > div > h4 {
+    font-size: 0.5em;
+    width: 70%;
+  }
+  #page4 > #project1 > div > a > #btn {
+    font-size: 0.8rem;
+  }
+  #page4 > #project1 > img {
+    height: 40%;
+  }
+  #page4 > #project2 > div {
+    padding-right: 2em;
+  }
+  #page4 > #project2 > div > h3 {
+    font-size: 0.8em;
+  }
+  #page4 > #project2 > div > h1 {
+    font-size: 1.5em;
+  }
+  #page4 > #project2 > div > h4 {
+    font-size: 0.5em;
+    width: 70%;
+  }
+  #page4 > #project2 > div > a > #btn {
+    font-size: 0.8rem;
+  }
+  #page4 > #project2 > img {
+    height: 40%;
+  }
 }/*# sourceMappingURL=main.css.map */
