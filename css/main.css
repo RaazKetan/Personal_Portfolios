@@ -173,13 +173,12 @@ html, body {
 }
 
 #page4 > #project1 > div > a > #btn {
-  margin-top: 2em;
+  margin-top: 1em;
   border: 2px solid white;
   background-color: transparent;
   cursor: pointer;
   font-size: 1rem;
   padding: 1em 1.5em;
-  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
