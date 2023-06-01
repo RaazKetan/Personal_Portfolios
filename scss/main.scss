@@ -191,10 +191,12 @@ html, body {
 }
 
 #page4>#project2{
+  margin-top: 2em;
   z-index: 2;
     height: 100vh;
     width: 100%;
-  background:#35393C;
+  background:url(../image/project2.jpg);
+  background-size:cover;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -204,68 +206,73 @@ html, body {
 
 @media only screen and (max-width: 768px) {
   #name {
-    font-size: 2em;
+  font-size: 2em;
   }
-
+  
   #about > h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
   }
-
+  
   .catch_phrase {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
   }
-
+  
   #page3 > #icons > i {
-    font-size: 3em;
+  font-size: 3em;
   }
-
+  
   #page4 > #project1 > div {
-    padding-left: 2em;
+  padding-left: 2em;
   }
-
+  
   #page4 > #project1 > div > h3 {
-    font-size: 0.8em;
+  font-size: 0.8em;
   }
-
+  
   #page4 > #project1 > div > h1 {
-    font-size: 1.5em;
+  font-size: 1.5em;
   }
-
+  
   #page4 > #project1 > div > h4 {
-    font-size: 0.5em;
-    width: 70%;
+  font-size: 0.5em;
+  width: 70%;
   }
-
+  
   #page4 > #project1 > div > a > #btn {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
   }
-
+  
   #page4 > #project1 > img {
-    height: 40%;
+  height: 40%;
   }
-
+  
   #page4 > #project2 > div {
-    padding-right: 2em;
+  padding-right: 2em;
   }
-
+  
   #page4 > #project2 > div > h3 {
-    font-size: 0.8em;
+  font-size: 0.8em;
   }
-
+  
   #page4 > #project2 > div > h1 {
-    font-size: 1.5em;
+  font-size: 1.5em;
   }
-
+  
   #page4 > #project2 > div > h4 {
-    font-size: 0.5em;
-    width: 70%;
+  font-size: 0.5em;
+  width: 70%;
   }
-
+  
   #page4 > #project2 > div > a > #btn {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
   }
-
+  
   #page4 > #project2 > img {
-    height: 40%;
+  height: 40%;
   }
-}
+  }
+  
+  
+  
+  
+  
