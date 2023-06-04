@@ -198,21 +198,20 @@ html, body {
   background-size:cover;
   display: flex;
   align-items: center;
-  flex-direction: column;
   text-transform: uppercase;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5); // Adjust the RGBA values and opacity as desired
   background-blend-mode: multiply;
 }
-#page4>#project2>h3
+#page4>#project2>div>h3
 {
   color: white;
 }
-#page4>#project2>h1
+#page4>#project2>div>h1
 {
   color: white;
 }
-#page4>#project2>p
+#page4>#project2>div>p
 {
   color: white;
 }
