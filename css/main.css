@@ -229,18 +229,29 @@ html, body {
   color: white;
 }
 
+#page4 > #project2 > img {
+  height: 60%;
+  margin: 0 4em 0;
+}
+
 @media only screen and (max-width: 768px) {
   #name {
-    font-size: 2em;
+    width: 100vw;
+    font-size: 1em;
   }
   #about > h2 {
     font-size: 1.5em;
   }
   .catch_phrase {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #page3 > #icons > i {
-    font-size: 3em;
+    font-size: 4em;
+    padding: 0.5em 1em 0.5em;
+  }
+  #page4 > #project1 {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
   }
   #page4 > #project1 > div {
     padding-left: 2em;
@@ -259,7 +270,12 @@ html, body {
     font-size: 0.8rem;
   }
   #page4 > #project1 > img {
-    height: 40%;
+    height: 30%;
+    margin: 0;
+  }
+  #page4 > #project2 {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
   }
   #page4 > #project2 > div {
     padding-right: 2em;
