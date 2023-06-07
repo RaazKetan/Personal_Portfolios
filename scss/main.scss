@@ -123,7 +123,7 @@ body {
 #page3 > #icons > i:nth-child(6) {
   color: white;
 }
-#page4 > #project1 {
+#page4 > #project1{
   z-index: 2;
   height: 100vh;
   width: 100%;
@@ -139,35 +139,40 @@ body {
     0,
     0,
     0.723
-  );// Adjust the RGBA values and opacity as desired
+  ); // Adjust the RGBA values and opacity as desired
   background-blend-mode: multiply;
-
 }
 #page4 > #project1 > div,
-#page4 > #project2 > div {
+#page4 > #project2 > div,
+#page4 > #project3 > div {
   z-index: 2;
   padding-left: 5em;
 }
-#page4 > #project1 > div > h3, #page4 > #project2 > div > h3 {
+#page4 > #project1 > div > h3,
+#page4 > #project2 > div > h3,
+#page4 > #project3 > div>h3 {
   z-index: 2;
   color: #80808b;
   font-size: 1em;
 }
 #page4 > #project1 > div > h1,
-#page4 > #project2 > div > h1 {
+#page4 > #project2 > div > h1,
+#page4 > #project3 > div>h1 {
   color: white;
   z-index: 2;
   line-height: 1.3em;
 }
 #page4 > #project1 > div > h4,
-#page4 > #project2 > div > h4 {
+#page4 > #project2 > div > h4,
+#page4 > #project3 > div>h4 {
   z-index: 2;
   color: white;
   font-size: 0.7em;
   font-weight: 300;
   width: 50%;
 }
-#page4 > #project1 > div > a > #btn, #page4 > #project2 > div > a > #btn  {
+#page4 > #project1 > div > a > #btn,
+#page4 > #project2 > div > a > #btn {
   margin-top: 1em;
   border: 2px solid white;
   background-color: transparent;
@@ -201,17 +206,16 @@ body {
   box-shadow: rgb(0, 0, 0) 0px 25px 20px -20px;
 }
 
-#page4 > #project2 {
+#page4 > #project2,#page4>#project3 {
   margin-top: 2em;
   z-index: 2;
   height: 100vh;
-  width: 100%;
+  // width: 100%;
   background: url(../image/project2.jpg);
   background-size: cover;
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  overflow: hidden;
   background-color: rgba(
     0,
     0,
@@ -221,13 +225,21 @@ body {
   background-blend-mode: multiply;
 }
 
-
 #page4 > #project2 > img {
   height: 60%;
   margin: 0 10em 0;
   border-radius: 9%;
   box-shadow: rgb(0, 0, 0) 0px 30px 90px;
 }
+#page4>#project3
+{
+  height: 100vh;
+  background: url(/image/project3.png);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.767); // Adjust the RGBA values and opacity as desired
+  background-blend-mode: multiply;
+}
+
 
 // Media Queries
 @media only screen and (max-width: 768px) {

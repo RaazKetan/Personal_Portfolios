@@ -1,6 +1,6 @@
-const text = document.querySelector('#name');
+const text = document.querySelector("#name");
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   const current = Math.trunc(window.scrollY);
   const limit = 500;
   console.log(current);
@@ -14,13 +14,7 @@ window.addEventListener('scroll', () => {
   text.style.opacity = 1 - current / limit;
 
   if (text.style.opacity == 0) {
-    window.removeEventListener('scroll', handleScroll);
+    window.removeEventListener("scroll", handleScroll);
     text.style.position = "absolute";
   }
 });
-
-
-
-
-
-
