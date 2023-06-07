@@ -4,7 +4,8 @@
   --font-body: " " Poppins ", sans-serif";
 }
 
-html, body {
+html,
+body {
   background-color: var(--primary-color);
   font-family: "Poppins", sans-serif;
 }
@@ -45,13 +46,11 @@ html, body {
 #about > p > span {
   color: var(--text-color);
   z-index: 2;
-
 }
 #about > h2 {
   color: white;
   font-size: 2em;
   z-index: 2;
-
 }
 #about > h2 > span {
   color: var(--text-color);
@@ -76,18 +75,21 @@ html, body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 #page3 > #line {
   border-left: 1px solid #80808b;
-  height: 6em;
+  height: 7em;
+  position: relative;
+  top: -10%;
 }
 #page3 > #know {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 2em;
+  // padding-top: 2em;
   z-index: 2;
 }
 
@@ -99,7 +101,6 @@ html, body {
   font-size: 4em;
   padding: 0 1em 0 1em;
   transition: 0.5s ease all;
-
 }
 #page3 > #icons > i:hover {
   transform: scale(1.5);
@@ -122,42 +123,51 @@ html, body {
 #page3 > #icons > i:nth-child(6) {
   color: white;
 }
-#page4>#project1{
+#page4 > #project1 {
   z-index: 2;
-    height: 100vh;
-    width: 100%;
-  background:#35393C;
+  height: 100vh;
+  width: 100%;
+  background: #35393c;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   overflow: hidden;
+  background: url(../image/project1.jpg);
+  background-size: cover;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.723
+  );// Adjust the RGBA values and opacity as desired
+  background-blend-mode: multiply;
+
 }
-#page4 > #project1 >div{
+#page4 > #project1 > div,
+#page4 > #project2 > div {
   z-index: 2;
   padding-left: 5em;
 }
-#page4>#project1>div>h3
-{
+#page4 > #project1 > div > h3, #page4 > #project2 > div > h3 {
   z-index: 2;
   color: #80808b;
   font-size: 1em;
 }
-#page4>#project1>div>h1{
+#page4 > #project1 > div > h1,
+#page4 > #project2 > div > h1 {
   color: white;
   z-index: 2;
-
   line-height: 1.3em;
 }
-#page4>#project1>div>h4{
+#page4 > #project1 > div > h4,
+#page4 > #project2 > div > h4 {
   z-index: 2;
-
   color: white;
   font-size: 0.7em;
   font-weight: 300;
   width: 50%;
 }
-#page4>#project1>div>a>#btn{
-
+#page4 > #project1 > div > a > #btn, #page4 > #project2 > div > a > #btn  {
   margin-top: 1em;
   border: 2px solid white;
   background-color: transparent;
@@ -165,7 +175,7 @@ html, body {
   font-size: 1rem;
   padding: 1em 1.5em;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
@@ -173,135 +183,126 @@ html, body {
   border-color: white;
   color: white;
   background: {
-    image: linear-gradient(45deg,white 50%, transparent 50%);
+    image: linear-gradient(45deg, white 50%, transparent 50%);
     position: 100%;
     size: 400%;
   }
   transition: background 300ms ease-in-out;
-  
+
   &:hover {
     color: black;
     background-position: 0;
   }
 }
-#page4>#project1>img{
+#page4 > #project1 > img {
   height: 50%;
-  margin-right:2em;
+  margin-right: 2em;
   // border-radius: 2%;
   box-shadow: rgb(0, 0, 0) 0px 25px 20px -20px;
-
 }
 
-#page4>#project2{
+#page4 > #project2 {
   margin-top: 2em;
   z-index: 2;
-    height: 100vh;
-    width: 100%;
-  background:url(../image/project2.jpg);
-  background-size:cover;
+  height: 100vh;
+  width: 100%;
+  background: url(../image/project2.jpg);
+  background-size: cover;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5); // Adjust the RGBA values and opacity as desired
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.723
+  ); // Adjust the RGBA values and opacity as desired
   background-blend-mode: multiply;
 }
-#page4>#project2>div>h3
-{
-  color: white;
-}
-#page4>#project2>div>h1
-{
-  color: white;
-}
-#page4>#project2>div>p
-{
-  color: white;
-}
-#page4>#project2>img
-{
+
+
+#page4 > #project2 > img {
   height: 60%;
-  margin: 0 4em 0;
+  margin: 0 10em 0;
   border-radius: 9%;
   box-shadow: rgb(0, 0, 0) 0px 30px 90px;
-  
 }
+
 // Media Queries
 @media only screen and (max-width: 768px) {
   #name {
     width: 100vw;
-  font-size: 1em;
+    font-size: 1em;
   }
-  
+
   #about > h2 {
-  font-size: 1.5em;
+    font-size: 1.5em;
   }
-  
+
   .catch_phrase {
-  font-size: 1.2rem;
-  
+    font-size: 1.2rem;
   }
-  
+
   #page3 > #icons > i {
-  font-size: 4em;
-  padding: 0.5em 1em 0.5em;
+    font-size: 4em;
+    padding: 0.5em 1em 0.5em;
   }
-  #page4>#project1{
+  #page4 > #project1 {
     flex-direction: column-reverse;
     justify-content: space-evenly;
   }
   #page4 > #project1 > div {
-  padding-left: 2em;
+    padding-left: 2em;
   }
-  
+
   #page4 > #project1 > div > h3 {
-  font-size: 0.8em;
+    font-size: 0.8em;
   }
-  
+
   #page4 > #project1 > div > h1 {
-  font-size: 1.5em;
+    font-size: 1.5em;
   }
-  
+
   #page4 > #project1 > div > h4 {
-  font-size: 0.5em;
-  width: 70%;
+    font-size: 0.5em;
+    width: 70%;
   }
-  
+
   #page4 > #project1 > div > a > #btn {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
   }
-  
+
   #page4 > #project1 > img {
-  height: 30%;
-  margin: 0;
+    height: 30%;
+    margin: 0;
   }
-  #page4 > #project2
-  {
+  #page4 > #project2 {
     flex-direction: column-reverse;
     justify-content: space-evenly;
   }
   #page4 > #project2 > div {
-  padding-right: 2em;
+    padding-right: 2em;
   }
-  
+
   #page4 > #project2 > div > h3 {
-  font-size: 0.8em;
+    font-size: 0.8em;
   }
-  
+
   #page4 > #project2 > div > h1 {
-  font-size: 1.5em;
+    font-size: 1.5em;
   }
-  
+
   #page4 > #project2 > div > h4 {
-  font-size: 0.5em;
-  width: 70%;
+    font-size: 0.5em;
+    width: 70%;
   }
-  
+
   #page4 > #project2 > div > a > #btn {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
   }
-  
-  #page4 > #project2 >img {
-  height: 40%;
+
+  #page4 > #project2 > img {
+    height: 40%;
   }
 }
