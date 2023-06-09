@@ -172,7 +172,8 @@ body {
   width: 50%;
 }
 #page4 > #project1 > div > a > #btn,
-#page4 > #project2 > div > a > #btn {
+#page4 > #project2 > div > a > #btn,
+#page4 > #project3 > div > a > #btn {
   margin-top: 1em;
   border: 2px solid white;
   background-color: transparent;
@@ -225,7 +226,7 @@ body {
   background-blend-mode: multiply;
 }
 
-#page4 > #project2 > img {
+#page4 > #project2 > img,#page4>#project3>img {
   height: 60%;
   margin: 0 10em 0;
   border-radius: 9%;
@@ -233,11 +234,23 @@ body {
 }
 #page4>#project3
 {
+  position: relative;
   height: 100vh;
   background: url(/image/project3.png);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.767); // Adjust the RGBA values and opacity as desired
   background-blend-mode: multiply;
+}
+#page4>#project3>img{
+  height: 50%;
+  border-radius: 0;
+  margin: 0 2em 1em;
+}
+#image2{
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  box-shadow: none;
 }
 
 
