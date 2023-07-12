@@ -262,69 +262,6 @@ body {
   box-shadow: none;
 }
 
-#quote1 {
-  height: 100vh;
-}
-
-#quote1 .wrap {
-  position: relative;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#quote1Top,
-#quote1Bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: auto;
-}
-
-#quote1Top {
-  transform: translate(31.1449%, -3.11449%) translate3d(0, 0, 0);
-}
-
-#quote1Bottom {
-  transform: translate(-31.1449%, 3.11449%) translate3d(0, 0, 0);
-}
-
-.quoteTextWrap {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#quote1TextSVG {
-  width: 100%;
-  height: auto;
-}
-
-.quote1Heart {
-  stroke-dashoffset: 922px;
-}
-
-.quoteTextBG {
-  fill: #ffffff;
-}
-
-.quoteText {
-  font-family: "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  fill: #000000;
-}
-
-.quote1TextTop {
-  transform: matrix(1, 0, 0, 1, -17.9314, 0);
-}
-
-.quote1TextBottom {
-  transform: matrix(1, 0, 0, 1, 22.4277, 0);
-}
-
 @media only screen and (max-width: 768px) {
   #name {
     width: 100vw;
