@@ -258,16 +258,30 @@ body {
   height: 100vh;
   background:url('../image/project4.mp4');
 }
-#page5{
+#page5 {
   height: 100vh;
   margin-top: 2em;
+  position: relative;
 }
+
+#page5::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.723), rgba(0, 0, 0, 0.723));
+  z-index: 1;
+}
+
 #background-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -1;
 }
+
 
 // Media Queries
 @media only screen and (max-width: 768px) {
