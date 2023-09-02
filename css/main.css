@@ -105,7 +105,6 @@ body {
   margin: 0;
   z-index: 2;
   width: 100%;
-  background-color: #000000;
 }
 
 #page3 > #icons > i {
@@ -293,6 +292,23 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+}
+
+#page6 {
+  z-index: 2;
+  color: #fa6821;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#page6 > #year_of {
+  display: flex;
+  position: relative;
+  top: 30%;
+  margin-left: 10%;
+  width: 30vw;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
