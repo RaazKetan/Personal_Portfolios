@@ -112,34 +112,11 @@ body {
   font-size: 4em;
   padding: 0 1em 0 1em;
   transition: 0.5s ease all;
+  color: #43494f;
 }
 
 #page3 > #icons > i:hover {
   transform: scale(1.5);
-}
-
-#page3 > #icons > i:nth-child(1) {
-  color: #495057;
-}
-
-#page3 > #icons > i:nth-child(2) {
-  color: #495057;
-}
-
-#page3 > #icons > i:nth-child(3) {
-  color: #495057;
-}
-
-#page3 > #icons > i:nth-child(4) {
-  color: #495057;
-}
-
-#page3 > #icons > i:nth-child(5) {
-  color: #495057;
-}
-
-#page3 > #icons > i:nth-child(6) {
-  color: #495057;
 }
 
 #page4 > #project1 {
@@ -309,13 +286,14 @@ body {
   display: flex;
   position: relative;
   top: 10%;
-  margin-left: 10%;
+  margin-left: 2em;
   width: 30vw;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 #page6 > #year_of > p > span {
+  font-weight: 100;
   position: relative;
   top: -4%;
 }
@@ -325,7 +303,43 @@ body {
   display: flex;
   line-height: 2em;
   text-align: center;
+  justify-content: center;
   font-size: 2em;
+}
+
+#page6 > #elements > #sec {
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+}
+
+#page6 > #elements > #sec > section {
+  text-transform: uppercase;
+  margin: 1em 0.5em 0 0.5em;
+  background-color: #75757a;
+  display: flex;
+  align-items: end;
+  z-index: 2;
+  width: 22vw;
+  height: 45vh;
+  color: white;
+  font-size: 1em;
+  padding: 0 0 1.5em 1.5em;
+  transition: 0.5s ease all;
+}
+
+#page6 > #elements > #sec > section:first-child {
+  background-color: #fa6821;
+  margin-left: 2em;
+}
+
+#page6 > #elements > #sec > section:last-child {
+  width: 22vw;
+}
+
+#page6 > #elements > #sec > section:hover {
+  background-color: #2568ce;
 }
 
 @media only screen and (max-width: 768px) {
