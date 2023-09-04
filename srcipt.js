@@ -1,5 +1,3 @@
-import LocomotiveScroll from 'locomotive-scroll';
-const scroll = new LocomotiveScroll();
 
 var text = document.querySelector("#name");
 
