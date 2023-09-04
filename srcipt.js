@@ -1,4 +1,7 @@
-const text = document.querySelector("#name");
+import LocomotiveScroll from 'locomotive-scroll';
+const scroll = new LocomotiveScroll();
+
+var text = document.querySelector("#name");
 
 window.addEventListener("scroll", () => {
   const current = Math.trunc(window.scrollY);
