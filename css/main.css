@@ -1,6 +1,7 @@
 @import url(page1.css);
 @import url(_var.css);
 @import url(page2.css);
+@import url(page3.css);
 :root {
   --primary-color: #080a0c;
   --text-color: #fa6821;
@@ -15,201 +16,7 @@ body {
   overflow-x: hidden;
 }
 
-#page3 {
-  height: 100vh;
-  color: #80808b;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-#page3 > #line {
-  border-left: 1px solid #80808b;
-  height: 7em;
-  position: relative;
-  top: -10%;
-}
-
-#page3 > #know {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 2;
-}
-
-#page3 > #icons {
-  padding: 5em 0 5em 0;
-  margin: 0;
-  z-index: 2;
-}
-
-#page3 > #icons > i {
-  font-size: 4em;
-  padding: 0 1em 0 1em;
-  transition: 0.5s ease all;
-  color: #43494f;
-}
-
-#page3 > #icons > i:hover {
-  transform: scale(1.5);
-}
-
-#page4 > #project1 {
-  z-index: 2;
-  height: 100vh;
-  width: 100%;
-  background: #35393c;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  overflow: hidden;
-  background: url(../image/project1.jpg);
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.723);
-  background-blend-mode: multiply;
-}
-
-#page4 > #project1 > div,
-#page4 > #project2 > div,
-#page4 > #project3 > div {
-  z-index: 2;
-  padding-left: 5em;
-}
-
-#page4 > #project1 > div > h3,
-#page4 > #project2 > div > h3,
-#page4 > #project3 > div > h3 {
-  z-index: 2;
-  color: #80808b;
-  font-size: 1em;
-}
-
-#page4 > #project1 > div > h1,
-#page4 > #project2 > div > h1,
-#page4 > #project3 > div > h1 {
-  color: white;
-  z-index: 2;
-  line-height: 1.3em;
-}
-
-#page4 > #project1 > div > h4,
-#page4 > #project2 > div > h4,
-#page4 > #project3 > div > h4 {
-  z-index: 2;
-  color: white;
-  font-size: 0.7em;
-  font-weight: 300;
-  width: 50%;
-}
-
-#page4 > #project1 > div > a > #btn,
-#page4 > #project2 > div > a > #btn,
-#page4 > #project3 > div > a > #btn {
-  margin-top: 1em;
-  border: 2px solid white;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 1em 1.5em;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-
-#btn {
-  border-color: white;
-  color: white;
-  background-image: linear-gradient(45deg, white 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 400%;
-  transition: background 300ms ease-in-out;
-}
-#btn:hover {
-  color: black;
-  background-position: 0;
-}
-
-#page4 > #project1 > img {
-  height: 50%;
-  margin-right: 2em;
-  box-shadow: rgb(0, 0, 0) 0px 25px 20px -20px;
-}
-
-#page4 > #project2, #page4 > #project3 {
-  margin-top: 2em;
-  z-index: 2;
-  height: 100vh;
-  background: url(../image/project2.jpg);
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.723);
-  background-blend-mode: multiply;
-}
-
-#page4 > #project2 > img, #page4 > #project3 > img {
-  height: 60%;
-  margin: 0 10em 0;
-  border-radius: 9%;
-  box-shadow: rgb(0, 0, 0) 0px 30px 90px;
-}
-
-#page4 > #project3 {
-  position: relative;
-  height: 100vh;
-  background: url(/image/project3.png);
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.767);
-  background-blend-mode: multiply;
-}
-
-#page4 > #project3 > img {
-  height: 50%;
-  border-radius: 0;
-  margin: 0 2em 1em;
-}
-
-#image2 {
-  position: absolute;
-  top: 50%;
-  right: 40%;
-  box-shadow: none;
-}
-
-#page4 > #project4 {
-  height: 100vh;
-  background: url("../image/project4.mp4");
-}
-
-#page5 {
-  height: 100vh;
-  margin-top: 2em;
-  position: relative;
-}
-
-#page5::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.836);
-  z-index: 1;
-}
-
-#background-video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1;
-}
-
-#page6 {
+#page4 {
   color: #fa6821;
   height: 100vh;
   display: flex;
@@ -218,7 +25,7 @@ body {
   font-weight: bold;
 }
 
-#page6 > #year_of {
+#page4 > #year_of {
   z-index: 2;
   display: flex;
   position: relative;
@@ -229,13 +36,13 @@ body {
   font-weight: bold;
 }
 
-#page6 > #year_of > p > span {
+#page4 > #year_of > p > span {
   font-weight: 100;
   position: relative;
   top: -4%;
 }
 
-#page6 > #elements > span {
+#page4 > #elements > span {
   margin-top: 2em;
   display: flex;
   line-height: 2em;
@@ -244,14 +51,14 @@ body {
   font-size: 2em;
 }
 
-#page6 > #elements > #sec {
+#page4 > #elements > #sec {
   z-index: 2;
   display: flex;
   justify-content: space-around;
   margin-left: 10%;
 }
 
-#page6 > #elements > #sec > section {
+#page4 > #elements > #sec > section {
   text-transform: uppercase;
   margin: 1em 0.5em 0 0.5em;
   background-color: #75757a;
@@ -266,16 +73,16 @@ body {
   transition: 0.5s ease all;
 }
 
-#page6 > #elements > #sec > section:first-child {
+#page4 > #elements > #sec > section:first-child {
   background-color: #fa6821;
   margin-left: 2em;
 }
 
-#page6 > #elements > #sec > section:last-child {
+#page4 > #elements > #sec > section:last-child {
   width: 22vw;
 }
 
-#page6 > #elements > #sec > section:hover {
+#page4 > #elements > #sec > section:hover {
   background-color: #2568ce;
 }
 
