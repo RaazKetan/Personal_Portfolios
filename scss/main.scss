@@ -123,6 +123,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   font-weight: bold;
+  margin-bottom: 10em;
 }
 #page4>#year_of
 {
@@ -189,11 +190,43 @@ body {
   background-color: #2568ce;
 }
 
-#bar{
-  height: 10vw;
+// display bar
+#displaybar
+{
+  position: absolute;
+  margin-top: 10em 0 2em 0;
+  height: 50vh;
+}
+#bar, #bar2{
+  z-index: 3;
+  position: relative;
+  left: -10%;
+  width: 120vw;
+  height: 5vw;
+  transform: rotate(5deg);
   background-color: #fa6821;
 }
+#bar, #bar2>span{
+  display: flex;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.7em;
+}
+#bar2
+{
+  position: relative;
+  opacity: 0.1;
+  top: -15%;
+  // right: -2%;
+  z-index: w;
+  background-color: #d86125;
+  margin-top: 0;
+  transform: rotate(-5deg);
+}
 
+//page 5
 
 // #random > #project1{
 //   z-index: 2;
