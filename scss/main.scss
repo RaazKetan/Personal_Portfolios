@@ -123,7 +123,6 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   font-weight: bold;
-  margin-bottom: 10em;
 }
 #page4>#year_of
 {
@@ -194,7 +193,7 @@ body {
 #displaybar
 {
   position: absolute;
-  margin-top: 10em 0 2em 0;
+  margin: 10em 0 10em 0;
   height: 50vh;
 }
 #bar, #bar2{
@@ -226,8 +225,36 @@ body {
   transform: rotate(-5deg);
 }
 
+#space
+{
+  height: 50vh;
+}
 //page 5
-
+#page5
+{
+  margin-top: 10em;
+  // z-index: 3;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#service{
+  z-index: 2;
+  // margin-top: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#service>span{
+  color: #fa6821;
+  font-size: 1.4em;
+}
+#service>p{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
 // #random > #project1{
 //   z-index: 2;
 //   height: 100vh;

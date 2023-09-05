@@ -128,7 +128,6 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   font-weight: bold;
-  margin-bottom: 10em;
 }
 
 #page4 > #year_of {
@@ -194,7 +193,7 @@ body {
 
 #displaybar {
   position: absolute;
-  margin-top: 10em 0 2em 0;
+  margin: 10em 0 10em 0;
   height: 50vh;
 }
 
@@ -225,6 +224,36 @@ body {
   background-color: #d86125;
   margin-top: 0;
   transform: rotate(-5deg);
+}
+
+#space {
+  height: 50vh;
+}
+
+#page5 {
+  margin-top: 10em;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#service {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#service > span {
+  color: #fa6821;
+  font-size: 1.4em;
+}
+
+#service > p {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
