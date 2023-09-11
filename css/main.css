@@ -290,6 +290,22 @@ body {
   padding: 1.5em;
 }
 
+#page6 {
+  height: 100vh;
+}
+
+#page6 > h1 {
+  color: white;
+  margin: 3em;
+  font-size: 3em;
+  line-height: 0.8em;
+}
+
+#page6 > h1 > span {
+  color: #fa6821;
+  font-weight: 100;
+}
+
 @media only screen and (max-width: 768px) {
   #name {
     width: 100vw;
