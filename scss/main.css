@@ -192,13 +192,11 @@ body {
 }
 
 #displaybar {
-  position: absolute;
-  margin: 10em 0 10em 0;
-  height: 50vh;
+  margin: 5em 0 5em 0;
 }
 
 #bar, #bar2 {
-  z-index: 3;
+  z-index: 2;
   position: relative;
   left: -10%;
   width: 120vw;
@@ -226,14 +224,9 @@ body {
   transform: rotate(-5deg);
 }
 
-#space {
-  height: 50vh;
-}
-
 #page5 {
-  margin-top: 10em;
+  margin-top: 6em;
   color: white;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -254,6 +247,47 @@ body {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
+}
+
+#One, #Two {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0 0 2em;
+}
+
+#One > #Design, #Two > #Design {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#Design > span {
+  color: #fa6821;
+  font-size: 1.5em;
+}
+
+#Design > span > #tag {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1em;
+}
+
+#Design > p {
+  margin: 5em 0 2em 0;
+  font-size: 0.9em;
+  width: 40%;
+}
+
+#Design_Service {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 2em 0;
+}
+
+#Design_Service > span {
+  border: 1px solid white;
+  padding: 1.5em;
 }
 
 @media only screen and (max-width: 768px) {
