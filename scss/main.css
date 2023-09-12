@@ -290,13 +290,9 @@ body {
   padding: 1.5em;
 }
 
-#page6 {
-  height: 100vh;
-}
-
 #page6 > h1 {
   color: white;
-  margin: 3em;
+  margin: 2em 0 2em 3em;
   font-size: 3em;
   line-height: 0.8em;
 }
@@ -304,6 +300,40 @@ body {
 #page6 > h1 > span {
   color: #fa6821;
   font-weight: 100;
+}
+
+#page6 > #projects {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-left: 10em;
+}
+
+#page6 > #projects > #right {
+  display: flex;
+  flex-direction: column;
+}
+
+#page6 > #projects > #left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#page6 > #projects > #left > #left-1 {
+  height: 70vh;
+  background-image: url("../image/3dmania.png");
+  background-size: cover;
+}
+
+#page6 > #projects > #left > #left-1 > span {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 1em;
+  color: #43494f;
 }
 
 @media only screen and (max-width: 768px) {
