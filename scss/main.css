@@ -327,33 +327,27 @@ body {
   height: 70vh;
   background-image: url("../image/3dmania.png");
   background-size: cover;
-}
-
-#page6 > #projects > #left > #left-1 > div {
-  z-index: 2;
-  position: absolute;
-  bottom: 1em;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: bolder;
-  margin: 1.5em;
-  color: #43494f;
-  background-color: #fa6821;
-  opacity: 0;
+  z-index: 3;
   transition: all 0.5s ease-out;
 }
 
-#page6 > #projects > #left > #left-1 > div:hover {
-  opacity: 1;
-  background-color: #d86125;
+#left-1:hover {
+  transform: scale(1.15);
+  filter: grayscale(70%);
 }
 
 #page6 > #projects > #right > #right-1, #right-2 {
+  z-index: 2;
   position: relative;
   top: -20%;
   height: 50vh;
   background-image: url("../image/brew_nation.png");
   background-size: cover;
+  transition: all 0.5s ease-out;
+}
+
+#right-1, #right-2:hover {
+  filter: grayscale(80%);
 }
 
 #page6 > #projects > #right > #right-2 {
