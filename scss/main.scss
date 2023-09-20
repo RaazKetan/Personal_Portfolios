@@ -31,119 +31,206 @@ body {
 
 // page 2
 #page2 {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#about > hr {
+  margin-left: 0px;
+  width: 7em;
+}
+#about > p {
+  padding-top: 1em;
+  color: #80808b;
+  font-size: 1em;
+  line-height: 1.5em;
+  z-index: 2;
+}
+#about > p > span {
+  color: var(--text-color);
+  z-index: 2;
+}
+#about > h2 {
+  color: white;
+  font-size: 2em;
+  z-index: 2;
+}
+#about > h2 > span {
+  color: var(--text-color);
+}
+
+.catch_phrase {
+  padding: 1em 0 1em 0;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2568ce;
+  font-size: 2rem;
+  letter-spacing: 1em;
+  overflow: hidden;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.social-buttons {
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+$social-button-size: 64px;
+$social-button-icon-size: 0.4;
+$social-button-background: #fff;
+$social-button-active-color: #fff;
+$social-button-transition-time: 0.3s;
+
+$social-button-colors: (
+  'mail': #0072c6,
+  'linkedin': #0077b5,
+  'github': #6e5494,
+  'steam': #7da10e,
+  'snapchat': #eec900,
+  'twitter': #55acee,
+  'instagram': #e4405f,
+);
+
+.social-button {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: $social-button-size;
+  height: $social-button-size;
+  text-decoration: none;
+  border-radius: 100%;
+  background: $social-button-background;
+  text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: $social-button-transition-time;
   }
-  #about > hr {
-    margin-left: 0px;
-    width: 7em;
+
+  &:focus,
+  &:hover {
+    color: $social-button-active-color;
+
+    &::after {
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      margin-left: calc(-50% - 1px);
+    }
   }
-  #about > p {
-    padding-top: 1em;
-    color: #80808b;
-    font-size: 1em;
-    line-height: 1.5em;
-    z-index: 2;
+
+  i,
+  svg {
+    position: relative;
+    z-index: 1;
+    transition: $social-button-transition-time;
   }
-  #about > p > span {
-    color: var(--text-color);
-    z-index: 2;
+
+  i {
+    font-size: $social-button-size * $social-button-icon-size;
   }
-  #about > h2 {
-    color: white;
-    font-size: 2em;
-    z-index: 2;
+
+  svg {
+    height: percentage($social-button-icon-size);
+    width: percentage($social-button-icon-size);
   }
-  #about > h2 > span {
-    color: var(--text-color);
+
+  @each $name, $color in $social-button-colors {
+    &--#{$name} {
+      color: $color;
+
+      &::after {
+        background: $color;
+      }
+    }
   }
-  
-  .catch_phrase {
-    padding: 1em 0 1em 0;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #2568ce;
-    font-size: 2rem;
-    letter-spacing: 1em;
-    overflow: hidden;
-    text-transform: uppercase;
-    z-index: 2;
-  }
+}
+
 
 //page 3
 @import url(var.scss);
 #page3 {
-    height: 100vh;
-    color: #80808b;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  #page3 > #line {
-    border-left: 1px solid #80808b;
-    height: 7em;
-    position: relative;
-    top: -10%;
-  }
-  #page3 > #know {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    // padding-top: 2em;
-    z-index: 2;
-  }
-  
-  #page3 > #icons {
-    padding: 5em 0 5em 0;
-    margin: 0;
-    z-index: 2;
-  }
-  #page3 > #icons > i {
-    font-size: 4em;
-    padding: 0 1em 0 1em;
-    transition: 0.5s ease all;
-    color: #43494f;
-  }
-  #page3 > #icons > i:hover {
-    transform: scale(1.5);
-  }
-  //page 4
-#page4{
-  color:#fa6821;
+  height: 100vh;
+  color: #80808b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#page3 > #line {
+  border-left: 1px solid #80808b;
+  height: 7em;
+  position: relative;
+  top: -10%;
+}
+#page3 > #know {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // padding-top: 2em;
+  z-index: 2;
+}
+
+#page3 > #icons {
+  padding: 5em 0 5em 0;
+  margin: 0;
+  z-index: 2;
+}
+#page3 > #icons > i {
+  font-size: 4em;
+  padding: 0 1em 0 1em;
+  transition: 0.5s ease all;
+  color: #43494f;
+}
+#page3 > #icons > i:hover {
+  transform: scale(1.5);
+}
+//page 4
+#page4 {
+  color: #fa6821;
   height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   font-weight: bold;
 }
-#page4>#year_of
-{
+#page4 > #year_of {
   z-index: 2;
   display: flex;
   position: relative;
   top: 10%;
   margin-left: 2em;
-   width: 30vw;
-   font-size: 2.5em;
-   font-weight: bold;
-
+  width: 30vw;
+  font-size: 2.5em;
+  font-weight: bold;
 }
-#page4>#year_of>p>span
-{
+#page4 > #year_of > p > span {
   font-weight: 100;
   position: relative;
   top: -4%;
 }
-#page4>#elements>span
-{
+#page4 > #elements > span {
   margin-top: 2em;
   display: flex;
   line-height: 2em;
@@ -151,16 +238,14 @@ body {
   justify-content: center;
   font-size: 2em;
 }
-#page4>#elements>#sec
-{
+#page4 > #elements > #sec {
   z-index: 2;
   display: flex;
   // flex-direction: row;
   justify-content: space-around;
   margin-left: 10%;
 }
-#page4>#elements>#sec>section
-{
+#page4 > #elements > #sec > section {
   text-transform: uppercase;
   margin: 1em 0.5em 0 0.5em;
   background-color: #75757a;
@@ -175,25 +260,22 @@ body {
   transition: 0.5s ease all;
 }
 
-#page4>#elements>#sec>section:first-child
-{
-  background-color:#fa6821;
+#page4 > #elements > #sec > section:first-child {
+  background-color: #fa6821;
   margin-left: 2em;
 }
-#page4>#elements>#sec>section:last-child
-{
+#page4 > #elements > #sec > section:last-child {
   width: 22vw;
 }
-#page4>#elements>#sec>section:hover
-{
+#page4 > #elements > #sec > section:hover {
   background-color: #2568ce;
 }
 // display bar
-#displaybar
-{
+#displaybar {
   margin: 5em 0 5em 0;
 }
-#bar, #bar2{
+#bar,
+#bar2 {
   z-index: 2;
   position: relative;
   left: -10%;
@@ -202,7 +284,8 @@ body {
   transform: rotate(5deg);
   background-color: #fa6821;
 }
-#bar, #bar2>span{
+#bar,
+#bar2 > span {
   display: flex;
   font-weight: bold;
   color: white;
@@ -210,8 +293,7 @@ body {
   justify-content: center;
   font-size: 2.7em;
 }
-#bar2
-{
+#bar2 {
   position: relative;
   opacity: 0.1;
   top: -15%;
@@ -223,8 +305,7 @@ body {
 }
 
 //page 5
-#page5
-{
+#page5 {
   margin-top: 6em;
   // z-index: 3;
   color: white;
@@ -232,61 +313,61 @@ body {
   display: flex;
   flex-direction: column;
 }
-#service{
+#service {
   z-index: 2;
   // margin-top: 1em;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-#service>span{
+#service > span {
   color: #fa6821;
   font-size: 1.4em;
 }
-#service>p{
+#service > p {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
 }
 
-#One, #Two{
+#One,
+#Two {
   z-index: 2;
   display: flex;
   flex-direction: column;
   margin: 1em 0 0 2em;
 }
-#One>#Design, #Two>#Design{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
+#One > #Design,
+#Two > #Design {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-#Design>span
-{
+#Design > span {
   color: #fa6821;
   font-size: 1.5em;
 }
-#Design>span>#tag{
+#Design > span > #tag {
   text-transform: uppercase;
   color: white;
   font-size: 1em;
 }
-#Design>p
-{
+#Design > p {
   margin: 5em 0 2em 0;
   font-size: 0.9em;
   width: 40%;
 }
-#Design_Service{
+#Design_Service {
   display: flex;
   justify-content: center;
   margin: 2em 0 2em 0;
 }
-#Design_Service>span{
-border: 1px solid white;
-padding: 1.5em;
+#Design_Service > span {
+  border: 1px solid white;
+  padding: 1.5em;
 }
 
-#page6>h1{
+#page6 > h1 {
   position: relative;
   z-index: 2;
   color: white;
@@ -294,100 +375,98 @@ padding: 1.5em;
   font-size: 3em;
   line-height: 0.8em;
 }
-#page6>h1>span{
+#page6 > h1 > span {
   color: #fa6821;
   // font-size: 2em;
   font-weight: 100;
 }
-#page6>#projects
-{
+#page6 > #projects {
   display: flex;
   flex-direction: row;
   // justify-content: center;
   color: white;
   margin-left: 10em;
-
 }
-#page6>#projects>#right{
+#page6 > #projects > #right {
   display: flex;
   flex-direction: column;
   width: 40%;
   margin-left: 1em;
 }
-#page6>#projects>#left{
+#page6 > #projects > #left {
   width: 40%;
   display: flex;
   flex-direction: column;
   // justify-content: center;
 }
-#page6>#projects>#left>#left-1{
+#page6 > #projects > #left > #left-1 {
   z-index: 2;
   position: relative;
   height: 70vh;
-  background-image: url('../image/3dmania.png');
+  background-image: url("../image/3dmania.png");
   background-size: cover;
   transition: all 0.5s ease-out;
 }
-#left-1:hover{
+#left-1:hover {
   z-index: 3 !important;
   transform: scale(1.15);
   filter: grayscale(70%);
 }
 
-#page6>#projects>#right>#right-1,#right-2
-{
+#page6 > #projects > #right > #right-1,
+#right-2 {
   z-index: 2;
   position: relative;
   top: -20%;
   height: 50vh;
-  background-image: url('../image/brew_nation.png');
+  background-image: url("../image/brew_nation.png");
   background-size: cover;
   transition: all 0.5s ease-out;
 }
-#right-1:hover{
+#right-1:hover {
   z-index: 3 !important;
   transform: scale(1.15);
   filter: grayscale(70%);
 }
-#page6>#projects>#right>#right-2{
-// top: 0%;
-margin-top: 1em;
-background-image: url('../image/Wandr.png');
+#page6 > #projects > #right > #right-2 {
+  // top: 0%;
+  margin-top: 1em;
+  background-image: url("../image/Wandr.png");
 }
-#right-2:hover{
+#right-2:hover {
   z-index: 3 !important;
   transform: scale(1.15);
   filter: grayscale(70%);
 }
 
-footer{
+footer {
   z-index: 2;
   height: 80vh;
   color: #fff;
 }
-footer>section{
+footer > section {
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer>section>h4{
+footer > section > h4 {
   z-index: 2;
   color: #fa6821;
 }
-footer>section>h1{
+footer > section > h1 {
   z-index: 2;
   font-size: 2.2em;
   margin-top: 0;
 }
-footer>section>p{
+footer > section > p {
   z-index: 2;
   align-items: center;
   font-weight: 100;
   margin-top: 0;
   margin-bottom: 3em;
 }
-footer>section>a>button{
+footer > section > a > button {
   z-index: 2;
   color: #fff;
   box-shadow: none;
@@ -395,9 +474,6 @@ footer>section>a>button{
   letter-spacing: 3px;
   padding: 15px 32px;
 }
-
-
-
 
 // Media Queries
 @media only screen and (max-width: 768px) {
