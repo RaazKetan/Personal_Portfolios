@@ -1,4 +1,3 @@
-
 var text = document.querySelector("#name");
 
 window.addEventListener("scroll", () => {
