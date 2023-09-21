@@ -31,6 +31,7 @@ body {
 
 // page 2
 #page2 {
+  position: relative;
   z-index: 2;
   height: 100vh;
   display: flex;
@@ -77,8 +78,12 @@ body {
 }
 
 .social-buttons {
+  position: absolute;
+  top: 30%;
+  left: 22%;
   z-index: 2;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
@@ -86,7 +91,7 @@ body {
 
 $social-button-size: 64px;
 $social-button-icon-size: 0.4;
-$social-button-background: #fff;
+$social-button-background: #101111;
 $social-button-active-color: #fff;
 $social-button-transition-time: 0.3s;
 
@@ -257,7 +262,7 @@ $social-button-colors: (
   color: white;
   font-size: 1em;
   padding: 0 0 1.5em 1.5em;
-  transition: 0.5s ease all;
+  transition: 1s ease all;
 }
 
 #page4 > #elements > #sec > section:first-child {
@@ -268,7 +273,36 @@ $social-button-colors: (
   width: 22vw;
 }
 #page4 > #elements > #sec > section:hover {
-  background-color: #2568ce;
+  background-image:
+  linear-gradient(45deg,
+    rgba(245, 69, 66, 0.463),
+    rgba(8,83,156, 0.75)), url(
+'../image/bd.png');
+background-size: cover;
+  width: 30vw;
+  // background-color: #2568ce;
+}
+#page4 > #elements > #sec > section:nth-child(2):hover {
+  background-image:
+  linear-gradient(45deg,
+    rgba(245, 69, 66, 0.366),
+    rgba(8,83,156, 0.75)), url(
+'../image/fe.png');
+background-size:contain;
+// background-repeat: no-repeat;
+  // width: 12vw;
+  // background-color: #2568ce;
+}
+#page4 > #elements > #sec > section:last-child:hover {
+  background-image:
+  linear-gradient(45deg,
+    rgba(245, 69, 66, 0.366),
+    rgba(8,83,156, 0.75)), url(
+'../image/ux.png');
+background-size:cover;
+// background-repeat: no-repeat;
+  // width: 12vw;
+  // background-color: #2568ce;
 }
 // display bar
 #displaybar {
@@ -467,13 +501,19 @@ footer > section > p {
   margin-bottom: 3em;
 }
 footer > section > a > button {
+  cursor:pointer;
   z-index: 2;
   color: #fff;
   box-shadow: none;
+  border: none;
   background: transparent;
   letter-spacing: 3px;
   padding: 15px 32px;
 }
+footer > section > a{
+  z-index: 2;
+}
+
 
 // Media Queries
 @media only screen and (max-width: 768px) {
