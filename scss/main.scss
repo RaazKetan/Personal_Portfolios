@@ -13,11 +13,25 @@ body {
 }
 
 header{
+  z-index: 3;
+  position: fixed;
+  // display: flex;
   color: white;
   font-weight: 100;
   text-transform: uppercase;
-  width: 20%;
-  margin: 2em
+  // width: 10%;
+  margin: 2em;
+  border-bottom: 1px solid #0072c6;
+  transition: 0.5s ease-in all;
+}
+header>a>i{
+  color: #0072c6;
+  font-weight: 100;
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+header:hover{
+  padding-left: 1em;
 }
 //page1
 #page1 {
