@@ -290,6 +290,7 @@ header{
   font-size: 5em;
 }
 
+
 // page 2
 #page2 {
   position: relative;
@@ -323,6 +324,7 @@ header{
 #about > h2 > span {
   color: var(--text-color);
 }
+
 
 .catch_phrase {
   // padding: 1em 0 1em 0;
@@ -800,7 +802,71 @@ footer>h1{
 color: #1a1a1c;
 }
 
+@media screen and (max-width: 14in) {
+ header{
+  margin:3em 0 0 3em;
+ }
+ .tip-button{
+  height: 2em;
+  width: 7em;
+  font-size: 0.8em;
+ }
+  #name{
+    width: 200vw;
+    font-size: 2em;
+  }
+  #about>p{
+    font-size: 1em;
+  }
+  .catch_phrase{
+    padding: 1em 0 1em 0;
+    font-size: 2rem;
+    height: 50vh;
+  }
+  .social-buttons{
+    top: 30%;
+    left: 22%;
+    gap: 8px;
+  }
+  .social-button{
+    height: 64px;
+    width: 64px;
+  }
+  #page3{
+    height: 100vh;
+  }
+  #page3>#know{
+    font-size: 1em;
+  }
+  #page3>#icons{
+    padding: 5em 0 5em 0;
+    margin: 0;
+  }
+  #page3>#icons>i{
+    font-size: 4em;
+  }
+  #page4>#year_of{
+    font-size: 1.7em;
+  }
+  #page4 > #elements > #sec {
+    font-size: 0.6em;
+    // background-color: #0077b5;
+  }
+  #page4>#elements>span{
+    font-size: 1.7em;
+  }
+  #service > span {
+    font-size: 1.4em;
+  }
+  #Design > span {
+    font-size: 1.5em;
+  }
+  #Design > p {
+    font-size: 0.9em;
+    
+  }
 
+}
 // Media Queries
 @media only screen and (max-width: 768px) {
   #name {

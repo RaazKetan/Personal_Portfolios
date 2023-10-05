@@ -71,6 +71,14 @@ tipButtons.forEach((button) => {
 
 var text = document.querySelector("#name");
 
+var media = window.screen.availWidth;
+console.log(media);
+var size = 2;
+if(media == 1280){
+  size = "2em";
+}
+size =  Number(size.replace(/em$/, ''));
+console.log(size);
 window.addEventListener("scroll", () => {
   const current = Math.trunc(window.scrollY);
   const limit = 500;
@@ -81,10 +89,10 @@ window.addEventListener("scroll", () => {
     return;
   }
 
-  text.style.fontSize = `clamp(5rem, ${current}px, 30rem)`;
+  text.style.fontSize = `clamp(3em, ${current}px, 30rem)`;
   text.style.opacity = 1 - current / limit;
 
-  if (text.style.opacity == 0) {
+  if (text.style.opacity == 0 && current == 1000) {
     window.removeEventListener("scroll", handleScroll);
     text.style.position = "absolute";
   }
