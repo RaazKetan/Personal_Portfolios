@@ -287,7 +287,7 @@ header{
   text-align: center;
   width: 150vw;
   color: var(--text-color);
-  font-size: 5em;
+  font-size: 3em;
 }
 
 
@@ -436,7 +436,6 @@ $social-button-colors: (
 
 
 //page 3
-@import url(var.scss);
 #page3 {
   height: 70vh;
   color: #80808b;
@@ -509,15 +508,7 @@ $social-button-colors: (
   justify-content: center;
   font-size: 2.5em;
 }
-@media only screen and (max-width: 768px) {
-  #page4 > #elements > span {
-    position: relative;
-    top: 40%;
-    text-align: left;
-    align-items: flex-end;
-  }
-  
-}
+
 #page4 > #elements > #sec {
   z-index: 2;
   display: flex;
@@ -880,6 +871,7 @@ color: #1a1a1c;
 
   .catch_phrase {
     font-size: 1.2rem;
+    height:10vh;
   }
   .social-buttons{
     // position: absolute;
@@ -888,12 +880,59 @@ flex-direction: row;
 top: 70%;
 left: 10%;
   }
+  #page3{
+    height: 80vh;
+  }
 
   #page3 > #icons > i {
     font-size: 4em;
     padding: 0.5em 1em 0.5em;
   }
+  #page4{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
  #page4>#year_of{
-  margin-left: 0;
+  margin-left: 0.5em;
  }
+ #page4> #elements>span{
+  margin-top: 2em;
+  font-size: 1.2em;
+  padding: 0.5em;
+    text-align: left;
+}
+#page4 > #elements > #sec{
+  flex-direction: column;
+  margin-left: 1em;
+
+}
+#page4 > #elements > #sec > section {
+width: 70vw;
+height: 20vh;
+
+}
+#page4 > #elements > #sec > section:first-child {
+  margin-left: 0em;
+}
+#page4 > #elements > #sec > section:last-child {
+  width: 70vw;
+}
+#page4 > #elements > #sec > section:hover {
+//   background-image:
+//   linear-gradient(45deg,
+//     rgba(245, 69, 66, 0.463),
+//     rgba(8,83,156, 0.75)), url(
+// '../image/bd.png');
+background-size: cover;
+  width: 80vw;
+  // background-color: #2568ce;
+}
+#bar{
+  visibility: hidden;
+}
+#bar2{
+  background-color: transparent;
+}
+
 }
