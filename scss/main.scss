@@ -860,6 +860,14 @@ color: #1a1a1c;
 }
 // Media Queries
 @media only screen and (max-width: 768px) {
+  header{
+    margin:3em 0 0 3em;
+   }
+   .tip-button{
+    height: 2em;
+    width: 7em;
+    font-size: 0.8em;
+   }
   #name {
     width: 100vw;
     font-size: 1em;
@@ -928,11 +936,29 @@ background-size: cover;
   width: 80vw;
   // background-color: #2568ce;
 }
+#displaybar{
+  margin-top: 10em;
+}
 #bar{
   visibility: hidden;
 }
 #bar2{
   background-color: transparent;
 }
-
+#One,
+#Two {
+  margin:0;
+}
+#One > #Design,
+#Two > #Design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Design > p {
+  margin: 5em 0 2em 0;
+  font-size: 1em;
+  width: 90%;
+  text-align: center;
+}
 }
