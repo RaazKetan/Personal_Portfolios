@@ -3,7 +3,17 @@
   --text-color: #fa6821;
   --font-body: " " Poppins ", sans-serif";
 }
+$coin-size: 3.5rem;
+$coin-thickness: $coin-size / 5;
 
+$bg: #f4f7ff;
+$bg-button: #fa6821;
+$font-color: #fff;
+$c-l: #fcfaf9;
+$c-m: #c2cadf;
+$c-d: #8590b3;
+$c-side: #737c99;
+$shine: #e9f4ff;
 html,
 body {
   background-color: var(--primary-color);
@@ -20,33 +30,18 @@ header{
   font-weight: 100;
   text-transform: uppercase;
   // width: 10%;
-  margin: 4em;
-  border-bottom: 1px solid #0072c6;
-  transition: 0.5s ease-in all;
+  margin: 6em;
 }
-$coin-size: 3.5rem;
-$coin-thickness: $coin-size / 11;
 
-$bg: #f4f7ff;
-$bg-button: #031032;
-$font-color: #fff;
-$c-l: #fcfaf9;
-$c-m: #c2cadf;
-$c-d: #8590b3;
-$c-side: #737c99;
-$shine: #e9f4ff;
 
 .tip-button {
   background: none;
   border: 0;
-  border-radius: 0.25rem 0.25rem 0 0;
   cursor: pointer;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
   height: 2.6rem;
-  margin-bottom: -4rem;
-  outline: 0;
   position: relative;
   top: 0;
   transform-origin: 0% 100%;
@@ -85,7 +80,7 @@ $shine: #e9f4ff;
     &::after { // Thank you message
       opacity: 1;
       transform: scale(1);
-      transform-origin: 50% 100%;
+      transform-origin: 100% 100%;
     }
 
     // Make the little confetti looking dots on this wrapper
@@ -277,15 +272,6 @@ $shine: #e9f4ff;
   100% { transform: rotate() }
 }
 
-header>a>i{
-  color: #0072c6;
-  font-weight: 100;
-  font-size: 1.2em;
-  margin-left: 1em;
-}
-header:hover{
-  padding-left: 1em;
-}
 //page1
 #page1 {
   height: 100vh;
