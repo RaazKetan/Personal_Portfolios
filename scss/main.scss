@@ -2,8 +2,7 @@
   --primary-color: #080a0c;
   --text-color: #fa6821;
   --font-body: " " Poppins ", sans-serif";
-}
-$coin-size: 3.5rem;
+  $coin-size: 3.5rem;
 $coin-thickness: $coin-size / 5;
 
 $bg: #f4f7ff;
@@ -14,6 +13,8 @@ $c-m: #c2cadf;
 $c-d: #8590b3;
 $c-side: #737c99;
 $shine: #e9f4ff;
+}
+
 html,
 body {
   background-color: var(--primary-color);
