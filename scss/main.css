@@ -894,4 +894,23 @@ footer > h1 {
     width: 90%;
     text-align: center;
   }
+  #page6 > h1 {
+    margin: 2em 0;
+  }
+  #page6 > #projects {
+    flex-direction: column;
+    margin-left: 1em;
+  }
+  #page6 > #projects > #left, #page6 > #projects > #right {
+    display: contents;
+  }
+  #page6 > #projects > #left > #left-1, #page6 > #projects > #right > #right-1,
+  #right-2 {
+    height: 40vh;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+  }
+  footer > section > p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

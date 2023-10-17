@@ -2,7 +2,9 @@
   --primary-color: #080a0c;
   --text-color: #fa6821;
   --font-body: " " Poppins ", sans-serif";
-  $coin-size: 3.5rem;
+
+}
+$coin-size: 3.5rem;
 $coin-thickness: $coin-size / 5;
 
 $bg: #f4f7ff;
@@ -13,8 +15,6 @@ $c-m: #c2cadf;
 $c-d: #8590b3;
 $c-side: #737c99;
 $shine: #e9f4ff;
-}
-
 html,
 body {
   background-color: var(--primary-color);
@@ -960,6 +960,26 @@ background-size: cover;
   margin: 5em 0 2em 0;
   font-size: 1em;
   width: 90%;
+  text-align: center;
+}
+#page6>h1{
+  margin: 2em 0;
+}
+#page6>#projects{
+  flex-direction: column;
+  margin-left: 1em;
+}
+#page6>#projects>#left, #page6>#projects>#right{
+  display:contents;
+  // width: 50%;
+}
+#page6 > #projects > #left > #left-1,#page6 > #projects > #right > #right-1,
+#right-2  {
+  height: 40vh;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+}
+footer>section>p{
   text-align: center;
 }
 }
