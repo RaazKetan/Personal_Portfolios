@@ -237,6 +237,13 @@ header {
   flex-direction: column;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 #about > hr {
   margin-left: 0px;
   width: 7em;
@@ -280,15 +287,12 @@ header {
 }
 
 .social-buttons {
-  position: absolute;
-  top: 32%;
-  left: 25%;
   z-index: 2;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 0.5em;
+  order: -1;
 }
 
 .social-button {
@@ -818,6 +822,13 @@ footer > h1 {
     width: 100vw;
     font-size: 1em;
   }
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .social-buttons {
+    flex: 100%;
+    order: 1;
+  }
   #about > h2 {
     font-size: 1.5em;
   }
@@ -901,10 +912,12 @@ footer > h1 {
     flex-direction: column;
     margin-left: 1em;
   }
-  #page6 > #projects > #left, #page6 > #projects > #right {
+  #page6 > #projects > #left,
+  #page6 > #projects > #right {
     display: contents;
   }
-  #page6 > #projects > #left > #left-1, #page6 > #projects > #right > #right-1,
+  #page6 > #projects > #left > #left-1,
+  #page6 > #projects > #right > #right-1,
   #right-2 {
     height: 40vh;
     background-repeat: no-repeat;
